@@ -23,7 +23,7 @@ This repository is inspired by my old project named super-awesome-word-segmentat
 -   If the entire word matches,  `isWord(input_word, corpus, corpus_index)`  will return  True. Otherwise, False.
 -  For `plm_tokenizer(input_string, corpus, corpus_index)`, I have pointer `st` and `end` for current word, and `post_st`, `post_end` for the last word. When found the longest word of a sentence, it will save that word into a `word_list`, set new pointers.
     
-- In a condition that the appended word is not correct (mean that it make the rest cannot fit). `go_back` feature will consider the second prefix longest word using posterior pointers, and load the`check_point` -> repeat until all are satisfied.
+- In a condition that the appended word is not correct (mean that it make the rest cannot fit). `go_back` feature will consider the second prefix longest word using prior pointers, and load the`check_point` -> repeat until all are satisfied.
 
 ### Performance
 
