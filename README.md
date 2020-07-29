@@ -18,7 +18,7 @@ This repository is inspired by my old project named super-awesome-word-segmentat
     
 -   Create the `CORPUS_INDEX` following the first character in the corpus (corpus is already arranged).
     
--   Checking that first character of `input_string`  match with `CORPUS_INDEX` wheater or not?
+-   Checking that first character of `input_string`  match with `CORPUS_INDEX` whether or not?
     
 -   If the entire word matches,  `isWord(input_word, corpus, corpus_index)`  will return  True. Otherwise, False.
 -  For `plm_tokenizer(input_string, corpus, corpus_index)`, I have pointer `st` and `end` for current word, and `post_st`, `post_end` for the last word. When found the longest word of a sentence, it will save that word into a `word_list`, set new pointers.
